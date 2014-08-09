@@ -18,15 +18,12 @@ function starter_search_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function starter_search_context_default_contexts_alter(&$data) {
   if (isset($data['sitewide'])) {
-    $data['sitewide']->reactions['block'] = array(
-      'blocks' => array(
-        'search-form' => array(
-          'module' => 'search',
-          'delta' => 'form',
-          'region' => 'navigation',
-          'weight' => -10,
-        ),
-      ),
+    $data['sitewide']->reactions['block']['blocks']['search-form'] = array(
+      'module' => 'search',
+      'delta' => 'form',
+      'region' => 'navigation',
+      'weight' => -13,
+      'title' => '<none>',
     ); /* WAS: '' */
   }
 }

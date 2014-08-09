@@ -12,15 +12,12 @@ function starter_search_features_override_default_overrides() {
   $overrides = array();
 
   // Exported overrides for: context
-  $overrides["context.sitewide.reactions|block"] = array(
-    'blocks' => array(
-      'search-form' => array(
-        'module' => 'search',
-        'delta' => 'form',
-        'region' => 'navigation',
-        'weight' => -10,
-      ),
-    ),
+  $overrides["context.sitewide.reactions|block|blocks|search-form"] = array(
+    'module' => 'search',
+    'delta' => 'form',
+    'region' => 'navigation',
+    'weight' => -13,
+    'title' => '<none>',
   );
 
  return $overrides;
