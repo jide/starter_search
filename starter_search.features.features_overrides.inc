@@ -16,7 +16,7 @@ function starter_search_features_override_default_overrides() {
     'module' => 'search',
     'delta' => 'form',
     'region' => 'navigation',
-    'weight' => -13,
+    'weight' => -9,
     'title' => '<none>',
   );
 

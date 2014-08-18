@@ -22,7 +22,7 @@ function starter_search_context_default_contexts_alter(&$data) {
       'module' => 'search',
       'delta' => 'form',
       'region' => 'navigation',
-      'weight' => -13,
+      'weight' => -9,
       'title' => '<none>',
     ); /* WAS: '' */
   }
