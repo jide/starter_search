@@ -11,7 +11,6 @@ dependencies[] = starter_site_building
 dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
-features[features_overrides][] = context.sitewide.reactions|block|blocks|search-form
 features[variable][] = ds_search_view_mode
 features[variable][] = search_active_modules
 features[variable][] = search_default_module
